@@ -1,3 +1,5 @@
+
+
 # ProDiff: Prototype-Guided Diffusion for Minimal Information Trajectory Imputation
 
 This repository contains the official PyTorch implementation for the ICML 2025 paper **"ProDiff: Prototype-Guided Diffusion for Minimal Information Trajectory Imputation"** .
@@ -91,10 +93,10 @@ The primary entry point for the project is `main.py`. You can also use the provi
         ```
         The `run_ddpm.sh` script provides an example of how to launch DDP training. It uses environment variables like `MASTER_ADDR`, `MASTER_PORT`, `RANK`, `WORLD_SIZE`, and `LOCAL_RANK` which are typically set by the launch utility.
 
-    Training artifacts (model checkpoints, logs, results) will be saved in an experiment directory, usually structured as `experiments_json/<exp_name_with_timestamp>/`.
+    Training artifacts (model checkpoints, logs, results) will be saved in an experiment directory, usually structured as `Experiments/<exp_name_with_timestamp>/`.
 
 ### Experiment Management
--   Experiments are organized into directories under `experiments_json/`.
+-   Experiments are organized into directories under `Experiments/`.
 -   Each experiment directory will contain:
     -   `config.json`: A copy of the configuration used for the experiment.
     -   `models/`: Saved model checkpoints (diffusion model and transformer model).
@@ -139,4 +141,4 @@ The primary entry point for the project is `main.py`. You can also use the provi
     -   Calculates and logs evaluation metrics (from `utils/metric.py`).
     -   Saves generated samples/results.
 
-This README provides a starting point. You may need to delve into the specific scripts and configuration options for more advanced usage or customization. 
+This README provides a starting point. You may need to delve into the specific scripts and configuration options for more advanced usage or customization.
